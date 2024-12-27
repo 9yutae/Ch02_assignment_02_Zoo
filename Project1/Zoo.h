@@ -5,7 +5,7 @@
 
 class Zoo {
 private:
-	Animal* animals[10];
+	Animal* animals[10] = { nullptr };
 	int animalCount = 0;
 
 public:

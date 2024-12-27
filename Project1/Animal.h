@@ -4,22 +4,22 @@
 class Animal {
 public:
 	virtual void makeSound() = 0;
-	~Animal();
+	virtual ~Animal() = default;
 };
 
 class Dog : public Animal {
 public:
-	void makeSound();
+	void makeSound() override;
 };
 
 class Cat : public Animal {
 public:
-	void makeSound();
+	void makeSound() override;
 };
 
 class Cow : public Animal {
 public:
-	void makeSound();
+	void makeSound() override;
 };
 
 #endif
